@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.contrib.auth import views
 from log.forms import LoginForm
 
+app_name = 'TourneyTime'
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('log.urls')),

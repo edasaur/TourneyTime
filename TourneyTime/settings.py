@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'TourneyTime.apps.TourneyTimeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,4 +125,4 @@ os.path.join(BASE_DIR, "static"),
 ]
 
 LOGIN_REDIRECT_URL = '/' # It means home view
-
+#AUTH_USER_MODEL = 'TourneyTime.Player'
